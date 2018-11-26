@@ -37,7 +37,7 @@
 .header_text div:first-child {text-transform: uppercase;}
 
 .header_button {
-	position: relative;
+	position: relative; cursor: pointer;
 	width: auto; height: auto;
 	margin: auto; margin-top: 2rem;
 	display: flex; justify-content: center; align-items: center; 

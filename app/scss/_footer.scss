@@ -14,21 +14,38 @@
 }
 .footer__button {
 	display: flex; flex-direction: column; justify-content: center; align-items: center; width: 5.83rem; height: 100%;
-	position: relative; margin: auto;
+	position: relative; margin: auto; cursor: pointer;
 	border-radius: 50%;
 	font-size: 1.15rem; font-weight: bold; text-transform: uppercase; line-height: 1.2;
 }
 .footer__button p {width: 80%; height: auto; padding-bottom: 0.7rem;}
-.footer__button p:first-child {height: 2.3rem; background: url(../res/top_arrow.png) 50% 50% no-repeat; background-size: contain;}
+.footer__button p:first-child {height: 2.3rem; background: url(../img/top_arrow.png) 50% 50% no-repeat; background-size: contain;}
+
+.footer_logo {display: block; width: 45%; height: 3.55rem; text-align: right;}
+.footer_logo a {
+	display: block;
+	position: relative; 
+	width: 100%; height: 100%;
+	background: url(../img/logo.png) 50% 50% no-repeat; background-size: contain;
+}
 
 .footer__info {position: relative; width: auto; height: auto;}
-.footer__logo {
+.footer__info_logo {
 	display: block; width: 100%; height: 4.167rem;
 	position: relative; 
-	background: url(../res/gglogo.png) 50% 70% no-repeat; background-size: auto 2rem;
+	background: url(../img/gglogo.png) 50% 70% no-repeat; background-size: auto 2rem;
 }
-.privacy {display: none;}
-.footer__aside {display: none;}
+.footer__aside {display: block; width: auto; height: auto;}
+.footer__button_aside {
+	position: relative; cursor: pointer;
+	width: auto; height: auto;
+	margin: auto; margin-top: 2rem;
+	display: flex; justify-content: center; align-items: center; 
+	font-size: 1.2rem; text-transform: uppercase; font-weight: bold;
+	.button-wrapp {
+		padding: 1rem 1.5rem; height: auto;
+	}
+}
 
 /*adaptivity*/
 	/*mobile*/
@@ -42,38 +59,17 @@
 	/*desktop or tablets in landscape*/
 	@media only screen and (min-width: 1000px) {
 		.footer {
-			position: absolute; left: 0; right: 0; bottom: 0; height: 30rem; padding-top: 10rem;
-			background: url(../res/green-line_2.png) 50% 100% no-repeat; background-size: auto 33rem;
+			height: auto;
 		}
 		.footer .wrapper {position: relative; width: 950px; margin: auto; flex-direction: row; align-items: flex-end; justify-content: space-between;}
-		.button__wrapper {top: -9.7rem; height: 7.74rem;}
-		.footer__button {width: 7.74rem; font-size: 1.55rem;}
-		.footer__button p:first-child {height: 2.8rem;}
-		.footer__text {width: 27%; text-align: left;}
+		.button__wrapper {top: -6rem; height: 4.4rem;}
+		.footer__button {width: 4.4rem; font-size: 0.82rem;}
+		.footer__button p:first-child {height: 1.7rem;}
 		.privacy {display: block; padding-top: 3rem;}
 		
-		.footer__info {width: 27%;}
-
-		.footer__aside {display: block; width: 27%; height: auto;}
-		.footer__form {display: flex; width: 100%; justify-content: center; align-items: flex-start; padding-top: 0;}
-		.footer__form h2 {font-size: 1.16rem; line-height: 2; font-weight: 400;}
-		.footer__form .textarea {
-			height: 5.16rem; width: 100%; 
-			font-size: 1.16rem; text-align: left; font-family: inherit;
-			background-color: transparent; 
-			border: 0.2rem solid #e7d009; border-radius: 1.3rem; padding: 5px;
-			-webkit-filter: drop-shadow( -7px 5px 4px rgba(81,50,72,0.3));
-			        filter: drop-shadow( -7px 5px 4px rgba(81,50,72,0.3));
-			margin-bottom: 0.6rem;
-			resize: none;
-		} 
-		.footer__form .textarea:focus {outline: none;}
-		.footer__form .textarea::-webkit-input-placeholder {color: black;}
-		.footer__form .textarea:-ms-input-placeholder {color: black;}
-		.footer__form .textarea::-ms-input-placeholder {color: black;}
-		.footer__form .textarea::placeholder {color: black;}
-		.footer__form .textarea.tel {height: 2.7rem; text-align: center;}
-		.footer__form .button {width: 100%; margin-top: 0; }
+		.footer_logo, .footer__aside {width: 26%;}
+		.footer__info {width: 44%;} 
+		.footer_logo a {background-size: 13rem;}
 		.footer__contacts {
 			display: block; width: 100%; padding-top: 1.5rem; text-align: right;
 			font-size: 1.16rem; 
