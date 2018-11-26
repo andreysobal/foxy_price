@@ -1,0 +1,84 @@
+/*
+	Color Scheme and Fonts
+*/
+
+$white: #fff;
+$black: #000;
+$green: #018b86;
+
+$orange_light_bg: #ffc330;
+$orange_dark_bg: #f7992a;
+$yellow_bg: #fbe93a;
+$orange_bg: rgba(255,168,0,0.36);
+$black_line: #505050;
+$green_grad_dark: #018b86;
+$green_grad_light: #00c6b4;
+$grey_dark_bg: #dddddd;
+$grey_light_bg: #eaeaea;
+$black_bg: #505050;
+$red_text: #eb6320;
+$yellow_text: #ffea00;
+$green_text: #009c88;
+$orange_text: #FFA500;
+$grey_text: #a6a6a6;
+
+$error: rgba(255,0,0,0.8);
+$inactive: rgba(232,97,106,0.55);
+
+/* Links */
+a, a:visited, a:focus, a:active {color: $white; text-decoration: none;}
+a:hover {color: $white; text-decoration: none;}
+
+body {background-color: $grey_dark_bg; color: $white;}
+
+.text_black {color: $black;}
+.text_white {color: $white;}
+.text_red {color: $red_text;}
+.text_green {color: $green_text;}
+.text_yellow {color: $yellow_text;}
+.text_orange {color: $orange_text;}
+.text_grey {color: $grey_text;}
+
+.orange-grad {background: linear-gradient(to bottom, $orange_light_bg, $orange_dark_bg);}
+.green-grad {background: linear-gradient(to bottom, $green_grad_dark, $green_grad_light);}
+.light-grey-bg {background-color: $grey_light_bg;}
+.black-bg {background-color: $black_bg;}
+.white-bg {background-color: $white;}
+
+.button_yellow {
+	background-color: $yellow_bg;
+	background-image: linear-gradient(to bottom, $yellow_bg 0%, $yellow_bg 80%, $orange_bg 100%);
+}
+/* Form Elements */
+input.textarea.error-field, textarea.textarea.error-field {
+  border-color: $error;
+}
+.msg__box {
+	color: $green;
+}
+.ironCurtain {
+  background: $black;
+}
+
+/*adaptivity*/
+	/*mobile*/
+	@media only screen and (min-width: 320px) {
+
+	}
+	/*tablets*/
+	@media only screen and (min-width: 768px) {
+		
+	}
+	/*desktop or tablets in landscape*/
+	@media only screen and (min-width: 1000px) {
+		
+	}
+
+	/*wideview monitor*/
+	@media only screen and (min-width: 1280px) {
+		
+	}
+	/*supperwide view monitor*/
+	@media only screen and (min-width: 1920px) {
+
+	}

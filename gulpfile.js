@@ -18,7 +18,7 @@ var gulp          = require('gulp'),
 gulp.task('browser-sync', function() {
 	browserSync({
 		server: {
-			baseDir: 'app'
+			baseDir: 'app/'
 		},
 		notify: false,
 		open: false, //without opening http://localhost:3000/
@@ -40,8 +40,7 @@ gulp.task('styles', function() {
 gulp.task('components_style', function() {
 	return gulp.src([
 		'app/components/animate.css/animate.min.css',
-		'app/components/bootstrap/dist/css/bootstrap-reboot.min.css',
-		'app/components/bootstrap/dist/css/bootstrap-grid.min.css',
+		'app/components/swiper/dist/css/swiper.min.css',
 		])
 	.pipe(concatCss('components.css'))
 	.pipe(rename({ suffix: '.min', prefix : '' }))
@@ -68,6 +67,7 @@ gulp.task('js', function() {
 gulp.task('components_script', function() {
 	return gulp.src([
 		'app/components/jquery/dist/jquery.min.js',
+		'app/components/swiper/dist/js/swiper.min.js',
 		'app/components/wow/dist/wow.min.js',
 		])
 	.pipe(concat('components.min.js'))

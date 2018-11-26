@@ -2,13 +2,11 @@
   "name": "landing_init",
   "dependencies": {
     "jquery": "^3.3.1",
-    "bootstrap": "^4.1.3",
     "animate.css": "^3.7.0",
-    "wow": "wow.js#^1.1.2"
+    "wow": "wow.js#^1.1.2",
+    "swiper": "^4.4.2"
   },
-  "devDependencies": {
-
-  },
+  "devDependencies": {},
   "authors": [
     "andreysobal <say6287@gmail.com>"
   ],
