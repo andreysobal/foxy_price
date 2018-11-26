@@ -59,7 +59,7 @@ gulp.task('js', function() {
 		])
 	.pipe(concat('scripts.min.js'))
 	.pipe(babel())
-	.pipe(uglify()) // Mifify js (opt.)
+	//.pipe(uglify()) // Mifify js (opt.)
 	.pipe(gulp.dest('app/scripts/'))
 	.pipe(browserSync.reload({ stream: true }))
 });
@@ -67,6 +67,7 @@ gulp.task('js', function() {
 gulp.task('components_script', function() {
 	return gulp.src([
 		'app/components/jquery/dist/jquery.min.js',
+		'app/components/jquery-form/dist/jquery.form.min.js',
 		'app/components/swiper/dist/js/swiper.min.js',
 		'app/components/wow/dist/wow.min.js',
 		])
@@ -98,7 +99,7 @@ gulp.task('extras', () => {
 
 gulp.task('watch', ['styles', 'components_style', 'js', 'components_script', 'phpmailer', 'browser-sync'], function() {
 	gulp.watch('app/'+syntax+'/**/*.'+syntax+'', ['styles']);
-	gulp.watch(['components/**/*.js', 'app/js/common.js'], ['js']);
+	gulp.watch(['components/**/*.js', 'app/js/*.js'], ['js']);
 	gulp.watch('app/*.html', browserSync.reload)
 });
 
