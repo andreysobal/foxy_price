@@ -22,6 +22,7 @@
 	height: auto;
 	p {
 		margin: 0;
+		font-size: 1.15rem;
 	}
 }
 .header__info_logo a {
@@ -68,6 +69,7 @@
 		.header__info_logo {width: 12.25rem;}
 		.header__info_description {
 			width: auto; text-align: left;
+			p {font-size: 1.23rem;}
 		}
 		.header_text {padding-top: 5.5rem; font-size: 2.13rem; line-height: 1.25;}
 		.header_text div:last-of-type {
